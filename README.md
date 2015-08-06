@@ -24,7 +24,7 @@ UTF-8
 
 ### 文件 ###
 
-sun.php - 执行标题所述功能的文件
+sunget.php - 执行标题所述功能的文件
 
 demo.html - 演示文件
 
