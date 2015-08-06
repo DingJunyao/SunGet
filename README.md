@@ -113,7 +113,7 @@ demo.html - Demo File
 
 README.md - Readme File
 
-### Parameters ###
+### Arguments ###
 
 lng - Longtitude
 
@@ -156,6 +156,7 @@ E-mail:admin\#\#\#hlworks.org (\#\#\# -> @)
 The PHP Function which calculates the time difference between two timezones by danatauthenticdesign.net
 
 <http://php.net/manual/zh/function.timezone-offset-get.php>
+
 
 
 > PLEASE write my name when using this script, Thanks!
