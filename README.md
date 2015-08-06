@@ -66,7 +66,7 @@ period_exact_western - 西式精确时段，有七个值：morning,noon,afternoo
 
 ### 联系方式 ###
 
-E-mail：<admin@hlworks.org>
+E-mail：admin\#\#\#hlworks.org （\#\#\# -> @）
 
 微博：[@我就是丁俊尧](http://weibo.com/happysonlab/)
 
@@ -149,7 +149,7 @@ Polar day=day, polar night=nighttime.
 
 ### Contact ###
 
-E-mail:<admin@hlworks.org>
+E-mail:admin\#\#\#hlworks.org (\#\#\# -> @)
 
 ### Thanks to ###
 
