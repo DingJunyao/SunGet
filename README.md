@@ -107,7 +107,7 @@ UTF-8
 
 ### Files ###
 
-sun.php - File which execulate the functions the title said
+sunget.php - File which execulate the functions the title said
 
 demo.html - Demo File
 
