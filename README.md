@@ -12,7 +12,7 @@
     
 ### 格式 ###
 
-PHP
+PHP（>=5）
 
 ### 输出格式 ###
 
@@ -95,7 +95,7 @@ Ding Junyao
 
 ### Format ###
 
-PHP
+PHP (>=5)
 
 ### Output Format ###
 
