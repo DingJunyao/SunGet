@@ -76,7 +76,8 @@ danatauthenticdesign.net 提供的计算两个时区的时间差的PHP函数
 
 <http://php.net/manual/zh/function.timezone-offset-get.php>
 
-请在引用该脚本时署上我的名字，谢谢！
+
+请在使用该脚本时署上我的名字，谢谢！
 
 -----
 
@@ -155,5 +156,6 @@ E-mail:<admin@hlworks.org>
 The PHP Function which calculates the time difference between two timezones by danatauthenticdesign.net
 
 <http://php.net/manual/zh/function.timezone-offset-get.php>
+
 
 PLEASE write my name when using this script, Thanks!
