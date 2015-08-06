@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>获取经纬度并计算所在地日出日落时间/Get Longlilude and Latitude and Calculate the Sunrise and Sunset Time in Local</title>
+</head>
+<body onload="getLocation()">
+<span id="loading">正在计算中，请稍后……/Calculating...</span>
+<div>经度/Longtitude：<span id="lng"></span>&nbsp;纬度/Latitude：<span id="lat"></span><span id="geo-error"></span></div>
+<div>日出时间/Sunrise：<span id="sunrise"></span>&nbsp;日落时间/Sunset：<span id="sunset"></span></div>
+<div>问候语/Welcome：<span id="welcome"></span></div>
+<div>中式确切问候语/Chinese exact welcome：<span id="welcome-exact-chinese"></span></div>
+<div>西式确切问候语/Western exact welcome：<span id="welcome-exact-western"></span></div>
+<script type="text/javascript">
+var lng;
+var lat;
+var sunTime;
+var d = new Date()
+var localOffset = -d.getTimezoneOffset()/60
+x=document.getElementById("geo-error")
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+  else{x.innerHTML="您的浏览器不支持定位功能。/Geolocation is not supported by this browser.";}
+  }
+function showPosition(position)
+  {
+    lng=position.coords.longitude;
+    lat=position.coords.latitude;
+    document.getElementById("lng").innerHTML=position.coords.longitude;
+    document.getElementById("lat").innerHTML=position.coords.latitude;
+    loadXMLDoc()
+  }
+function showError(error)
+  {
+  switch(error.code)
+    {
+    case error.PERMISSION_DENIED:
+      x.innerHTML="用户拒绝定位。/User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML="位置信息不可用。/Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML="请求超时。/The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML="未知错误。/An unknown error occurred."
+      break;
+    }
+  }
+function loadXMLDoc(){
+  xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function(){
+    if (xmlhttp.readyState==4 && xmlhttp.status==200){
+      eval("sunTime ="+xmlhttp.responseText);
+      document.getElementById("sunrise").innerHTML=sunTime.sunrise
+      document.getElementById("sunset").innerHTML=sunTime.sunset
+      if(sunTime.period=="day"){
+        welcome="白天好！/Good day! "
+      }else{
+        welcome="晚上好！/Good Nighttime!"
+      }
+      document.getElementById("welcome").innerHTML=welcome;
+      document.getElementById("welcome-exact-chinese").innerHTML=sunTime.period_exact_chinese+"好！";
+      document.getElementById("welcome-exact-western").innerHTML="Good "+sunTime.period_exact_western+"! ";
+      document.getElementById("loading").innerHTML="";
+    }
+  }
+xmlhttp.open("GET","sunget.php?lng="+lng+"&lat="+lat+"&localOffset="+localOffset+"&t=" + Math.random(),true);
+xmlhttp.send();
+}
+</script>
+</body>
+</html>
