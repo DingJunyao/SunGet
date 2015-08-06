@@ -77,13 +77,13 @@ danatauthenticdesign.net 提供的计算两个时区的时间差的PHP函数
 <http://php.net/manual/zh/function.timezone-offset-get.php>
 
 
-请在使用该脚本时署上我的名字，谢谢！
+> 请在使用该脚本时署上我的名字，谢谢！
 
 -----
 
 #SunGet#
 
-### Calculating the Sunrise Time and Sunset Time and Express them in Client Time with Period ###
+### Calculating the Sunrise Time and Sunset Time and Show them in Client Time with Period ###
 
 ### By ###
 
@@ -135,7 +135,7 @@ period_exact_chinese - Chinese exact period, seven values:上午,中午,下午,�
 
 period_exact_western - Western exact period, seven values:morning,noon,afternoon,evening,night,day,nighttime (the last two values are only used in polar day and polar night)
 
-Please read **Note** to learning the rule of dividing the time into exact periods in this script. 
+Please read **Note** to learn the rule of dividing the time into exact periods in this script. 
 
 ### Note ###
 
@@ -158,4 +158,4 @@ The PHP Function which calculates the time difference between two timezones by d
 <http://php.net/manual/zh/function.timezone-offset-get.php>
 
 
-PLEASE write my name when using this script, Thanks!
+> PLEASE write my name when using this script, Thanks!
