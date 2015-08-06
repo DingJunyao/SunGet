@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>计算日出日落时间并以客户端时间显示，同时返回基于时间的问候语 Calculating the Sunrise Time and Sunset Time and Show them in Client Time with Welcomes Based on Time</title>
+<script type="text/javascript">
+var GPSLng;
+var GPSLat;
+var sunTime;
+var d = new Date()
+var localOffset = -d.getTimezoneOffset()/60
+function loadXMLDoc(){
+var GPSLng=document.getElementById("lng").value;
+var GPSLat=document.getElementById("lat").value;
+  xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function(){
+    if (xmlhttp.readyState==4 && xmlhttp.status==200){
+      eval("sunTime ="+xmlhttp.responseText);
+      document.getElementById("sunrise").innerHTML=sunTime.sunrise
+      document.getElementById("sunset").innerHTML=sunTime.sunset
+      if(sunTime.period=="day"){
+        welcome="白天好！/Good day! "
+      }else{
+        welcome="晚上好！/Good nighttime! "
+      }
+      document.getElementById("welcome").innerHTML=welcome
+      document.getElementById("welcome-exact-chinese").innerHTML=sunTime.period_exact_chinese+"好！"
+      document.getElementById("welcome-exact-western").innerHTML="Good "+sunTime.period_exact_western+"! "
+    }
+  }
+xmlhttp.open("GET","sun.php?lng="+GPSLng+"&lat="+GPSLat+"&localOffset="+localOffset+"&t=" + Math.random(),true);
+xmlhttp.send();
+}
+</script>
+</head>
+
+<body>
+<h2>计算日出日落时间并以客户端时间显示，同时返回基于时间的问候语<br />Calculating the Sunrise Time and Sunset Time and Show them in Client Time with Welcomes Based on Time</h2>
+经度/Longtitude：<input id="lng" type="text"/>
+纬度/Latitude：<input id="lat" type="text"/>
+<button onClick="loadXMLDoc()">提交/Submit</button>
+<div>日出时间/Sunrise time：<span id="sunrise"></span></div>
+<div>日落时间/Sunset time：<span id="sunset"></span>&nbsp;</div>
+<div>问候语/Welcome：<span id="welcome"></span></div>
+<div>中式确切问候语/Chinese exact welcome：<span id="welcome-exact-chinese"></span></div>
+<div>西式确切问候语/Western exact welcome：<span id="welcome-exact-western"></span></div>
+</div>
+</body>
+</html>
