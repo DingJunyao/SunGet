@@ -28,7 +28,7 @@ var GPSLat=document.getElementById("lat").value;
       document.getElementById("welcome-exact-western").innerHTML="Good "+sunTime.period_exact_western+"! "
     }
   }
-xmlhttp.open("GET","sun.php?lng="+GPSLng+"&lat="+GPSLat+"&localOffset="+localOffset+"&t=" + Math.random(),true);
+xmlhttp.open("GET","sunget.php?lng="+GPSLng+"&lat="+GPSLat+"&localOffset="+localOffset+"&t=" + Math.random(),true);
 xmlhttp.send();
 }
 </script>
