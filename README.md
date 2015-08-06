@@ -30,6 +30,12 @@ demo.html - 演示文件
 
 README.md - 自述文档
 
+GeoSunTime.html - 通过浏览器获取经纬度，再调用SunGet输出结果
+
+GeoSunTime-baidu.html - （需要xy-conv.js）通过百度地图获取百度坐标，再转换成GPS坐标，再调用SunGet输出结果
+
+xy-conv.js - 坐标转换工具，来源于<http://www.oschina.net/code/snippet_260395_39205>
+
 ### 参数 ###
 
 lng - 经度
@@ -112,6 +118,12 @@ sunget.php - File which execulate the functions the title said
 demo.html - Demo File
 
 README.md - Readme File
+
+GeoSunTime.html - Get the longtitude and latitude by browser and output the results with SunGet
+
+GeoSunTime-baidu.html - (This html is used in mainland China, due to Google is blocked and Chrome can't get the geolocation and the coornidates of geolocation are compulsorily encrypted in mainland China. xy-conv.js is required in it. )
+
+xy-conv.js - A coornidates convert tool,which is from<http://www.oschina.net/code/snippet_260395_39205>
 
 ### Parameters ###
 
