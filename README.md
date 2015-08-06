@@ -79,7 +79,7 @@ E-mail：admin\#\#\#hlworks.org （\#\#\# -> @）
 ### 鸣谢 ###
 
  - danatauthenticdesign.net 提供的计算两个时区的时间差的PHP函数 <http://php.net/manual/zh/function.timezone-offset-get.php>
--坐标转换工具 <http://www.oschina.net/code/snippet_260395_39205>
+ - 坐标转换工具 <http://www.oschina.net/code/snippet_260395_39205>
 
 > 请在使用该脚本时署上我的名字，谢谢！
 
@@ -165,6 +165,7 @@ E-mail:admin\#\#\#hlworks.org (\#\#\# -> @)
 
  - The PHP Function which calculates the time difference between two timezones by danatauthenticdesign.net <http://php.net/manual/zh/function.timezone-offset-get.php>
  - A coornidates convert tool <http://www.oschina.net/code/snippet_260395_39205>
+
 
 
 > PLEASE write my name when using this script, Thanks!
