@@ -78,10 +78,8 @@ E-mail：admin\#\#\#hlworks.org （\#\#\# -> @）
 
 ### 鸣谢 ###
 
-danatauthenticdesign.net 提供的计算两个时区的时间差的PHP函数
-
-<http://php.net/manual/zh/function.timezone-offset-get.php>
-
+ - danatauthenticdesign.net 提供的计算两个时区的时间差的PHP函数 <http://php.net/manual/zh/function.timezone-offset-get.php>
+-坐标转换工具 <http://www.oschina.net/code/snippet_260395_39205>
 
 > 请在使用该脚本时署上我的名字，谢谢！
 
@@ -121,11 +119,11 @@ README.md - Readme File
 
 GeoSunTime.html - Get the longtitude and latitude by browser and output the results with SunGet
 
-GeoSunTime-baidu.html - (This html is used in mainland China, due to Google is blocked and Chrome can't get the geolocation and the coornidates of geolocation are compulsorily encrypted in mainland China. xy-conv.js is required in it. )
+GeoSunTime-baidu.html - (This html is used in mainland China, due to Google is blocked and Chrome can't get the geolocation and the coornidates of geolocation are compulsorily encrypted in mainland China. xy-conv.js is required in it. )Get the Baidu Map Coornidates by Baidu Map API, convert them to longtitude and latitude and output the results with SunGet
 
 xy-conv.js - A coornidates convert tool,which is from<http://www.oschina.net/code/snippet_260395_39205>
 
-### Parameters ###
+### Arguments ###
 
 lng - Longtitude
 
@@ -165,9 +163,8 @@ E-mail:admin\#\#\#hlworks.org (\#\#\# -> @)
 
 ### Thanks to ###
 
-The PHP Function which calculates the time difference between two timezones by danatauthenticdesign.net
-
-<http://php.net/manual/zh/function.timezone-offset-get.php>
+ - The PHP Function which calculates the time difference between two timezones by danatauthenticdesign.net <http://php.net/manual/zh/function.timezone-offset-get.php>
+ - A coornidates convert tool <http://www.oschina.net/code/snippet_260395_39205>
 
 
 > PLEASE write my name when using this script, Thanks!
