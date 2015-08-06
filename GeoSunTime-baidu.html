@@ -73,12 +73,10 @@ function loadXMLDoc(){
 xmlhttp.open("GET","sunget.php?lng="+GPSLng+"&lat="+GPSLat+"&localOffset="+localOffset+"&t=" + Math.random(),true);
 xmlhttp.send();
 }
-
 function getSunInfo(){
  getPosiFromBd()}
 </script>
 </head>
-
 <body onload="getSunInfo()">
 <span id="loading">正在计算中，请稍后……</span>
 <div>百度经度：<span id="bd-lng"></span>&nbsp;百度纬度：<span id="bd-lat"></span>&nbsp;<span id="bd-error"></span></div>
