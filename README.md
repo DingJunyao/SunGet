@@ -131,9 +131,9 @@ sunset - The sunrise time, HH:MM, it's "null" when polar day or polar night
 
 period - Rough period, two values:day,nighttime
 
-period_exact_chinese - Chinese exact period, seven values:上午,中午,下午,晚上,凌晨,白天,黑夜 (the last two values are only used when polar day and polar night)
+period_exact_chinese - Chinese exact period, seven values:上午,中午,下午,晚上,凌晨,白天,黑夜 (the last two values are only used in polar day and polar night)
 
-period_exact_western - Western exact period, seven values:morning,noon,afternoon,evening,night,day,nighttime (the last two values are only used when polar day and polar night)
+period_exact_western - Western exact period, seven values:morning,noon,afternoon,evening,night,day,nighttime (the last two values are only used in polar day and polar night)
 
 Please read **Note** to learning the rule of dividing the time into exact periods in this script. 
 
