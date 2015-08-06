@@ -25,8 +25,7 @@ function getPosiFromBd(){
     }
 		else {
       document.getElementById("bd-error").innerHTML=this.getStatus();
-		}    
-        
+		}
 	},{enableHighAccuracy: true})
 	//关于状态码
 	//BMAP_STATUS_SUCCESS	检索成功。对应数值“0”。
@@ -81,7 +80,7 @@ function getSunInfo(){
 <span id="loading">正在计算中，请稍后……</span>
 <div>百度经度：<span id="bd-lng"></span>&nbsp;百度纬度：<span id="bd-lat"></span>&nbsp;<span id="bd-error"></span></div>
 <div>GPS经度：<span id="gps-lng"></span>&nbsp;GPS纬度：<span id="gps-lat"></span></div>
-<div>日出时间：<span id="sunrise"></span>&nbsp;日落时间：<span id="sunset"></span>&nbsp;<span id="sun-error"></span></div>
+<div>日出时间：<span id="sunrise"></span>&nbsp;日落时间：<span id="sunset"></span></div>
 <div>问候语：<span id="welcome"></span></div>
 <div>中式确切问候语：<span id="welcome-exact-chinese"></span></div>
 <div>西式确切问候语：<span id="welcome-exact-western"></span></div>
