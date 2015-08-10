@@ -1,6 +1,6 @@
-#SunGet#
+#SunGet（GeoSunTime分支）#
 
-### 计算日出日落时间并以客户端时间显示，同时返回时间段 ###
+### 计算日出日落时间并以客户端时间显示，同时返回时间段，并附带定位工具 ###
 
 ### 作者 ###
 
@@ -85,9 +85,9 @@ E-mail：admin\#\#\#hlworks.org （\#\#\# -> @）
 
 -----
 
-#SunGet#
+#SunGet(GeoSunTime Branch)#
 
-### Calculating the Sunrise Time and Sunset Time and Show them in Client Time with Period ###
+### Calculating the Sunrise Time and Sunset Time and Show them in Client Time with Period. The tools for getting the position are included in this branch.  ###
 
 ### By ###
 
