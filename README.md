@@ -1,6 +1,6 @@
 > 本脚本发布之日起即为最终版本，不再更新。如果使用更新版本的 PHP 与浏览器，请自行检查是否兼容。
 
-#SunGet#
+# SunGet
 
 ### 计算日出日落时间并以客户端时间显示，同时返回时间段 ###
 
@@ -75,7 +75,7 @@ danatauthenticdesign.net 提供的计算两个时区的时间差的PHP函数
 
 > The scripts is the final version since published. If you are using a newer version of PHP and your browser, check for compatibility yourself.
 
-#SunGet#
+# SunGet
 
 ### Calculating the Sunrise Time and Sunset Time and Show them in Client Time with Period ###
 
