@@ -1,3 +1,5 @@
+> 本脚本发布之日起即为最终版本，不再更新。如果使用更新版本的 PHP 与浏览器，请自行检查是否兼容。
+
 #SunGet#
 
 ### 计算日出日落时间并以客户端时间显示，同时返回时间段 ###
@@ -5,10 +7,6 @@
 ### 作者 ###
 
 丁俊尧
-
-### 网站 ###
-
-<http://www.hlworks.org/>
     
 ### 格式 ###
 
@@ -64,12 +62,6 @@ period_exact_western - 西式精确时段，有七个值：morning,noon,afternoo
 
 极昼视为白天(day)，极夜视为黑夜(nighttime)。
 
-### 联系方式 ###
-
-E-mail：admin\#\#\#hlworks.org （\#\#\# -> @）
-
-微博：[@我就是丁俊尧](http://weibo.com/happysonlab/)
-
 ### 鸣谢 ###
 
 danatauthenticdesign.net 提供的计算两个时区的时间差的PHP函数
@@ -81,6 +73,8 @@ danatauthenticdesign.net 提供的计算两个时区的时间差的PHP函数
 
 -----
 
+> The scripts is the final version since published. If you are using a newer version of PHP and your browser, check for compatibility yourself.
+
 #SunGet#
 
 ### Calculating the Sunrise Time and Sunset Time and Show them in Client Time with Period ###
@@ -88,10 +82,6 @@ danatauthenticdesign.net 提供的计算两个时区的时间差的PHP函数
 ### By ###
 
 Ding Junyao
-
-### Website ###
-
-<http://www.hlworks.org/>
 
 ### Format ###
 
@@ -146,10 +136,6 @@ In nighttime(nighttime，黑夜), the former 1/4 of it is evening and the rest i
 Day and noon have two points occupied, and evening and 晚上 have end points occupied. 
 
 Polar day=day, polar night=nighttime. 
-
-### Contact ###
-
-E-mail:admin\#\#\#hlworks.org (\#\#\# -> @)
 
 ### Thanks to ###
 
